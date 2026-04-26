@@ -1,0 +1,38 @@
+{
+    "users": [
+        {
+            "name": "Alex",
+            "email": "alex@example.com",
+            "projects": [
+                {
+                    "title": "CLI Tool",
+                    "description": "A project management tool",
+                    "due_date": "2026-05-01",
+                    "tasks": [
+                        {
+                            "title": "Implement add-task",
+                            "status": "pending",
+                            "assigned_to": "Alex"
+                        }
+                    ]
+                },
+                {
+                    "title": "CLI Tool",
+                    "description": "A project management tool",
+                    "due_date": "2026-05-01",
+                    "tasks": []
+                }
+            ]
+        },
+        {
+            "name": "Alex",
+            "email": "alex@example.com",
+            "projects": []
+        },
+        {
+            "name": "Alex",
+            "email": "alex@example.com",
+            "projects": []
+        }
+    ]
+}
