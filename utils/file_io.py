@@ -1,22 +1,24 @@
 # utils/file_io.py
+
 import json
-import os
+from models.user import User
+from models.project import Project
+from models.task import Task
 
-def load_data(file_path, model_class=None):
-    """Loads data from a JSON file and converts it to objects."""
-    if not os.path.exists(file_path):
-        return []
-    with open(file_path, 'r') as file:
-        try:
+# Load data from a file
+def load_data(file_path, model_class):
+    try:
+        with open(file_path, 'r') as file:
             data = json.load(file)
-            if model_class:
-                return [model_class(**item) for item in data]
-            return data
-        except json.JSONDecodeError:
-            return []
+        return [model_class(**item) for item in data]
+    except (FileNotFoundError, json.JSONDecodeError):
+        return []
 
+# Save data to a file
 def save_data(file_path, data):
-    """Saves a list of objects to a JSON file."""
-    with open(file_path, 'w') as file:
-        json.dump([item.to_dict() for item in data], file, indent=4)
+    try:
+        with open(file_path, 'w') as file:
+            json.dump([item.to_dict() for item in data], file, indent=4)
+    except Exception as e:
+        print(f"Error saving data: {e}")
         
