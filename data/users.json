@@ -18,10 +18,26 @@
                         "title": "Task 1",
                         "status": "in-progress",
                         "assigned_to": "Alex"
+                    },
+                    {
+                        "title": "Task 1",
+                        "status": "in-progress",
+                        "assigned_to": "Alex"
                     }
                 ]
+            },
+            {
+                "title": "Project 1",
+                "description": "Build a new app",
+                "due_date": "2023-12-31",
+                "tasks": []
             }
         ]
+    },
+    {
+        "name": "Alex",
+        "email": "alex@example.com",
+        "projects": []
     },
     {
         "name": "Alex",

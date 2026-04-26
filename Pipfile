@@ -5,8 +5,8 @@ name = "pypi"
 
 [packages]
 argparse = "*"
-rich = "*"
 tabulate = "*"
+rich = "*"
 
 [dev-packages]
 
