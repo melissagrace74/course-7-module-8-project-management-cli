@@ -1,0 +1,31 @@
+[
+    {
+        "name": "Alex",
+        "email": "alex@example.com",
+        "projects": [
+            {
+                "title": "CLI Tool",
+                "description": "Build a Python CLI tool",
+                "due_date": "2023-12-31",
+                "tasks": []
+            },
+            {
+                "title": "Project 1",
+                "description": "Project Description",
+                "due_date": "2023-12-31",
+                "tasks": [
+                    {
+                        "title": "Task 1",
+                        "status": "in-progress",
+                        "assigned_to": "Alex"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Alex",
+        "email": "alex@example.com",
+        "projects": []
+    }
+]
